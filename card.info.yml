@@ -1,0 +1,30 @@
+name: Card Block
+machine_name: card
+type: pdb
+description: 'Expansion Panel Block'
+package: React
+# version: '1.0.0'
+# core: '8.x'
+module_status: active
+presentation: react_custom
+configuration:
+  node_type:
+    type: textfield
+    title: 'Node Type'
+    default_value: ''
+    required: true
+  limit:
+    type: textfield
+    title: 'Limit'
+    description: 'Maximum number of nodes to display'
+    default_value: ''
+    required: true
+add_js:
+  footer:
+    'dist/main.js': {}
+
+# Information added by Drupal.org packaging script on 2016-11-17
+version: '8.x-1.0-alpha6'
+core: '8.x'
+project: 'pdb'
+datestamp: 1479397524
